@@ -1,0 +1,116 @@
+/* Import  */
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+:root{
+  /* Colors */
+  --white-color: #fff;
+  --dark-color: #252525;
+  --primary-color: #000B58;
+  --secondary-color: #003161;
+  --light-blue-color: #006A67;
+  --medium-yellow-color: #FFF4B7;
+}
+
+/* */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Story Script", sans-serif;
+    box-sizing: border-box;
+    background: var(--light-blue-color);
+}
+.container{
+
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(50deg,var(--light-blue-color),var(--medium-yellow-color));
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px var(--medium-yellow-color);
+}
+/* Title */
+.title-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 12px;
+   margin-bottom: 30px;
+}
+.title-container h3{
+    font-size: 32px;
+    color: var(--primary-color);
+}
+.title-container img{
+    width: 38px;
+}
+
+/* To do list */
+.todo-list-container{
+    width: 100%;
+    max-width: 480px;
+    padding: 30px 20px ;
+    border-radius: 20px;
+    
+}
+.add-container{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+#task-input{
+    flex: 1;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: var(--medium-yellow-color);
+}
+.add-container #add-btn{
+    padding: 12px 20px;
+    border: none;
+    background: var(--primary-color);
+    color: var(--medium-yellow-color);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.add-container #add-btn:hover{
+    background: var(--secondary-color);
+    transition: 0.3s;
+}
+#task-list{
+    padding: 0;
+}
+#task-list li {
+  list-style: none;
+  background:var(--medium-yellow-color);
+  padding: 10px ;
+  margin-bottom: 5px;
+  border-radius: 12px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 6px --primary-color;
+  animation: fadeIn .3s ease;
+}
+#delete-btn {
+    width: 20%;
+
+}
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(5px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+
+
+
+
+
+
+

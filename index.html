@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO APP </title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO APP</title>
+    <link
+      href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1 class="title">TO-DO List</h1>
-        
+      <div class="title-container">
+        <h2>TO-DO List</h2>
+        <img src="images/checklist.png" alt="checklist" />
+      </div>
+      <div class="todo-list-container">
+        <div class="add-container">
+          <input type="text" name="task" id="task-input" />
+          <button type="submit" id="add-btn">Add Task</button>
+        </div>
+        <div class="list-container">
+          <ul id="task-list">
+            <li>task 1 
+                <button type="submit"><img src="images/x.png" alt="delete"></button>
+            </li>
+            <li> task 2 </li>
+            <li> task 3 </li>
+          </ul>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
