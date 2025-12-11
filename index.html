@@ -11,26 +11,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="title-container">
-        <h2>TO-DO List</h2>
-        <img src="images/checklist.png" alt="checklist" />
-      </div>
-      <div class="todo-list-container">
-        <div class="add-container">
-          <input type="text" name="task" id="task-input" />
-          <button type="submit" id="add-btn">Add Task</button>
+      <div class="container">
+        <div class="title-container">
+          <h2>TO-DO List</h2>
+          <img src="images/checklist.png" alt="checklist" />
         </div>
-        <div class="list-container">
-          <ul id="task-list">
-            <li>task 1 
-                <button type="submit"><img src="images/x.png" alt="delete"></button>
-            </li>
-            <li> task 2 </li>
-            <li> task 3 </li>
-          </ul>
+        <div class="todo-list-container">
+          <div class="add-container">
+            <input type="text" name="task" id="task-input" />
+            <button type="submit" id="add-btn">Add Task</button>
+          </div>
+          <div class="list-container">
+            <ul id="task-list">
+              <li>
+                <div class="p-check-task">
+                  <label class="circle-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <p>Task 1</p>
+                </div>
+                <button type="submit" id="delete-btn">
+                  <img src="images/x.png" alt="delete" />
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    
+      <script src="script.js"></script>
   </body>
 </html>
