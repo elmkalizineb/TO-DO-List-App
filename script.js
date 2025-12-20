@@ -1,6 +1,8 @@
 // Variables 
 const addTaskBtn = document.getElementById('add-btn');
+const deleteTaskBtn = document.querySelector('.delete-btn');
 const taskInput = document.getElementById("task-input");
+
 // Add Task Event 
 addTaskBtn.addEventListener("click", () => {
     const taskText = taskInput.value.trim();
@@ -12,7 +14,7 @@ addTaskBtn.addEventListener("click", () => {
 
     // add the task  on the TO-DO list 
     const node = document.createElement("li");
-    node.innerHTML =`
+    node.innerHTML = `
                 <div class="p-check-task">
                   <label class="circle-checkbox">
                     <input type="checkbox" />
@@ -20,14 +22,19 @@ addTaskBtn.addEventListener("click", () => {
                   </label>
                   <p>${taskText}</p>
                 </div>
-                <button type="submit" id="delete-btn">
+                <button type="submit" class="delete-btn">
                   <img src="images/x.png" alt="delete" />
                 </button>
     `;
+    // Attach delete event to this task : Delete listener must be attached for each new task
+    node.querySelector('.delete-btn').addEventListener("click", () => {
+        node.remove();
+    });
+    
     document.getElementById("task-list").appendChild(node);
     // clear input 
     taskInput.value = "";
 });
 
-// delete a task 
+
 
