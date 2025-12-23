@@ -27,26 +27,26 @@ JavaScript (Vanilla JS) – DOM manipulation and interactivity
 
 # ⚙️ How It Works
 
-The user types a task in the input field.
+ - The user types a task in the input field.
 
-Clicking Add Task creates a new task dynamically.
+- Clicking Add Task creates a new task dynamically.
 
-Each task contains:
+- Each task contains:
 
-A circular checkbox to mark it as completed
+- A circular checkbox to mark it as completed
 
-A delete button to remove the task
+ - A delete button to remove the task
 
 Tasks are manipulated directly using JavaScript and the DOM.
 
 # 🧠 What I Learned
 
-DOM manipulation using createElement, innerHTML, and addEventListener
+- DOM manipulation using createElement, innerHTML, and addEventListener
 
-Handling events for dynamically created elements
+- Handling events for dynamically created elements
 
-Proper use of classes vs IDs
+- Proper use of classes vs IDs
 
-Building custom UI components (circular checkbox)
+- Building custom UI components (circular checkbox)
 
-Structuring a small front-end project
+- Structuring a small front-end project
